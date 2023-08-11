@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>#663 ohjelmiston toteutus</title>
+</head>
+<body>
+    <!-- Navigointi -->
+    <nav class="navigointi">
+        <h1>Sivun nimi</h1>
+        
+        <ul>
+            <li><a href="index.html">Kirjautuminen</a></li>
+            <li><a href="rekisterointi.html">Rekisteröinti</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <!-- Navigointi -->
+
+        <!-- Rekisteröityminen -->
+        <div class="rekisteroityminen">
+            <p id="ilmoitus"></p>
+
+            <input id="kayttaja" type="text">
+            <label for="kayttaja">Käyttäjätunnus</label>
+        
+            <br>
+    
+            <input id="salasana" type="password">
+            <label for="salasana">Salasana</labe>
+    
+            <br>
+            
+            <button id="rekisteroidy" onclick="rekisteroidy()">Rekisteroidy</button>
+
+            <p>(Tekemäsi käyttäjä ei toimi sisään kirjautumiseen)</p>
+                
+        </div>
+
+    </div>
+
+    <script src="rekisterointiJaKirjautuminen.js"></script>
+    <script src="logiikka.js"></script>
+</body>
+</html>

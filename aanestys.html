@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>#663 ohjelmiston toteutus</title>
+</head>
+<body>
+    
+    <!-- Navigointi -->
+    <nav class="navigointi">
+        <h1>Sivun nimi</h1>
+        
+        <div class="navbarLinkit">
+            
+            <ul>
+                <li><a href="etusivu.html">Etusivu</a></li>
+            </ul>
+    
+            <ul class="profiili">
+                <li><a id="kayttajaProfiili" href="#">123456</a></li>
+                
+                <ul class="profiiliDropdown">
+                    <li><a href="profiili.html">Profiili</a></li>
+                    <li><a href="index.html">Kirjaudu ulos</a></li>
+                </ul>
+            </ul>
+            
+
+        </div>
+        
+    </nav>
+
+    <div class="container">
+        <!-- Sisalto -->
+        <div class="sisalto">
+            <div class="aanestys" >
+
+                <div class="aanestysTiedot" id="aanestysTiedot">
+                    <h3>Pannukakut</h3>
+                    <p>Tykkäätkö pannukakuista?</p>
+
+                </div>
+
+                <br>
+
+                <div class="aanestysTulokset">
+                    <div class="aanestysPalkki" id="aanestysPalkki"></div>
+                    <div class="aanestysPalkkiEi" id="aanestysPalkkiEi"></div>
+
+                    <div class="aanestysKyltit">
+                        <span class="aanestysKyltti" id="aanestysKylttiKylla">Kyllä</span>
+                        <span class="aanestysKyltti" id="aanestysKylttiEi">Ei</span>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="aanestysValinnat">
+                    <label for="kylla">Kyllä</label>
+                    <input type="radio" name="aanesta" value="kylla">
+
+                    <input type="radio" name="aanesta" value="ei">
+                    <label for="ei">Ei</label>
+                </div>
+                
+                <button class="aanestysNappi" id="aanestysNappi">Äänestä</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="logiikka.js"></script>
+</body>
+</html>

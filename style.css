@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Work+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 40px;
+
+    justify-self: center;
+    display: grid;
+    align-items: end;
+}
+
+
+/* Navigointi */
+/* Lista tyylitys */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarLinkit {
+    display: flex;
+}
+
+/* Aktivoitu linkki */
+a.active {
+    font-weight: bold;
+}
+
+nav h1 {
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    display: block;
+
+    padding: 10px 20px;
+    margin: 5px;
+    
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+/* Etusivu */
+/* Etusivu äänestyskortti */
+.aanestysKortinLinkki {
+    text-decoration: none;
+}
+
+.aanestysKortti {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1050px;
+    padding: 20px;
+    border-radius: 20px;
+    
+    background-color: #555;
+    color: #fff;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+
+    position: relative;
+}
+
+.aanestysKortti:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
+}
+
+.aanestysKortti h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.aanestysKortti p {
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+/* Etusivu profiili */
+.profiili {
+    position: relative;
+}
+
+.profiiliDropdown {
+    display: none;
+    position: absolute;
+
+    top: 100%;
+    left: -15px;
+
+    background-color: #555;
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.profiiliDropdown a:hover {
+    background-color: #333;
+}
+
+.profiili:hover .profiiliDropdown {
+    display: block;
+}
+
+
+/* rekisteröityminen */
+.rekisteroityminen {
+    justify-self: center;
+}
+
+.rekisteroityminen button{
+    margin-top: 5px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: #333;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    
+}
+
+
+/* Kirjautuminen */
+.kirjautuminen {
+    justify-self: center;
+}
+
+.kirjautuminen button{
+    margin-top: 5px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: #333;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    
+}
+
+
+/* Äänestys */
+.aanestys {
+    text-align: center;
+
+    width: 1050px;
+    padding: 20px;
+    border-radius: 20px;
+    
+    background-color: #555;
+    color: #fff;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+
+}
+
+.aanestysTulokset {
+    width: 100%;
+    height: 30px;
+    
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+    background-color: #ff0000;
+
+    position: relative;
+}
+
+/* Kyllä äänet suurentavat tätä palkkia aanestystulos palkin päälle. */
+.aanestysPalkki {
+    height: 100%;
+    width: 0;
+    
+    border-radius: 5px 0px 0px 5px;
+    
+    background-color: #4caf50;
+}
+
+/* Äänestys tulos palkin alla olevat kyllä ja ei merkit*/
+.aanestysKyltit {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.aanestysKyltti {
+    margin: 0px 5px;
+}
+
+/* aanestys vaihtoehdot */
+.aanestysValinnat {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aanestysNappi {
+    margin-top: 10px;
+
+    padding: 10px 20px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #4caf50;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Ylläpitäjä sivu */
+.yllapitajaContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 40px;
+
+    justify-self: center;
+    display: grid;
+}
+
+.aanestysPoistoNappi ,.aanestysPoistoNappi2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 1050px;
+    height: 40px;
+
+    border-radius: 15px;
+
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #ff0000b6;
+    
+    outline: none;
+    cursor: pointer;
+
+    font-weight: 1000;
+}
+
+.aanestyksenLisaysNappi {
+    width: 1050px;
+    height: 40px;
+
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #fff;
+
+    outline: none;
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+
+    font-weight: 1000;
+}
+
+.aanestyksenLisaysNappi:hover, .aanestysPoistoNappi:hover, .aanestysPoistoNappi2:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
+}
